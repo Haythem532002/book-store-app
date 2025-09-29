@@ -31,7 +31,5 @@ jobs:
           IMAGE_TAG=${{ github.sha }}
           docker tag book-store-gitops ${{ secrets.DOCKER_USERNAME }}/book-store-gitops:${IMAGE_TAG}
           docker push ${{ secrets.DOCKER_USERNAME }}/book-store-gitops:${IMAGE_TAG}
-          docker tag book-store-gitops ${{ secrets.DOCKER_USERNAME }}/book-store-gitops:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/book-store-gitops:latest
 
         
