@@ -33,7 +33,6 @@ jobs:
           docker tag book-store-gitops $IMAGE:$TAG
           docker push $IMAGE:$TAG
       
-      # Optional: also push :latest (helps sanity-checking)
       - name: Tag & Push latest
         run: |
           IMAGE=${{ secrets.DOCKER_USERNAME }}/book-store-gitops
